@@ -34,11 +34,20 @@ ${JSON.stringify(profile, null, 2)}
       "country": "Country Name",
       "university": "University Name",
       "major": "Major Name",
-      "scholarships": ["Scholarship 1", "Scholarship 2"],
+      "ranking": "Global Ranking (e.g. #45)",
+      "tuition_fees": "Approx Tuition (e.g. $20k/year)",
       "why_this_choice": "Explanation...",
       "risk_flags": ["Risk 1"],
       "admission_probability": "High/Medium/Low"
     }
+  ],
+  "top_scholarships": [
+      {
+          "name": "Scholarship Name",
+          "amount": "Funding Amount (e.g. Full Ride or $1000/month)",
+          "deadline": "Next Deadline (e.g. Dec 2024)",
+          "eligibility": "Brief eligibility criteria"
+      }
   ],
   "risks": ["General risk 1", "General risk 2"],
   "alternatives": ["Alternative path 1"]
@@ -55,6 +64,7 @@ Target Goal: ${JSON.stringify(recommendations[0] || "General Improvement")}
   "roadmap": [
     {
       "phase": "Month 1-3: Foundation",
+      "description": "High level goal of this phase",
       "actions": ["Action 1", "Action 2"],
       "exams": ["IELTS", "SAT"],
       "skills_to_learn": ["Skill 1"]
@@ -64,7 +74,7 @@ Target Goal: ${JSON.stringify(recommendations[0] || "General Improvement")}
 `;
 
 module.exports = {
-    generateStudentAnalysisPrompt,
-    generateRecommendationPrompt,
-    generateRoadmapPrompt
+  generateStudentAnalysisPrompt,
+  generateRecommendationPrompt,
+  generateRoadmapPrompt
 };

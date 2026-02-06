@@ -5,7 +5,7 @@ const storageService = require('../services/storageService');
 
 const profileSchema = Joi.object({
     id: Joi.string().required(), // Simple ID from client for now
-    gpa: Joi.number().min(0).max(4.0).required(),
+    gpa: Joi.number().min(0).max(4.0).optional(),
     intended_major: Joi.string().required(),
     career_goal: Joi.string().required(),
     country_preference: Joi.string().required(),
@@ -14,7 +14,9 @@ const profileSchema = Joi.object({
     interests: Joi.array().items(Joi.string()).required(),
     risk_tolerance: Joi.string().valid('Low', 'Medium', 'High').required(),
     academic_strengths: Joi.array().items(Joi.string()),
-    academic_weaknesses: Joi.array().items(Joi.string())
+    academic_weaknesses: Joi.array().items(Joi.string()),
+    dynamic_answers: Joi.array().items(Joi.any()).optional(),
+    additional_info: Joi.string().optional().allow('')
 });
 
 exports.createProfile = catchAsync(async (req, res, next) => {
@@ -45,6 +47,28 @@ exports.getProfile = catchAsync(async (req, res, next) => {
         status: 'success',
         data: {
             profile
+        }
+    });
+});
+
+exports.updateProfile = catchAsync(async (req, res, next) => {
+    const { id } = req.params;
+    const updates = req.body;
+
+    // Simple check if profile exists
+    const existingProfile = storageService.getProfile(id);
+    if (!existingProfile) {
+        return next(new AppError('No profile found with that ID', 404));
+    }
+
+    // Merge updates (no strict schema validation for partial updates for flexibility here)
+    // In production, we'd use a separate Joi schema for updates.
+    const updatedProfile = storageService.saveProfile(id, updates);
+
+    res.status(200).json({
+        status: 'success',
+        data: {
+            profile: updatedProfile
         }
     });
 });
