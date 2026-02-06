@@ -1,4 +1,4 @@
-# GenEduPlanner Backend
+# AskGem Backend
 
 Production-ready Node.js + Express backend for an AI-powered academic decision platform using the Google Gemini 3 API.
 
