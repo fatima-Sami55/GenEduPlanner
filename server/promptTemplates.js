@@ -1,73 +1,86 @@
 const generateStudentAnalysisPrompt = (profile) => `
-You are an expert academic advisor and career counselor. Analyze the following student profile deeply.
+You are an expert academic advisor and career counselor.
+**Goal:** Ask ONE high-impact question to clarify the student's academic path or preferences.
 
 **Student Profile:**
 ${JSON.stringify(profile, null, 2)}
 
-**Goal:**
-Identify gaps, strengths, and necessary clarifications to provide the best academic roadmap.
+**Constraints:**
+- Ask only ONE question.
+- Keep it short (max 1-2 lines).
+- Focus on career clarity, specific skills, or learning style.
+- Avoid repetitive cost questions if budget is already set.
+- **STRICT JSON OUTPUT ONLY**.
 
-**Output:**
-Return a single question to ask the student next to clarify their path.
-JSON Format:
+**Output JSON:**
 {
-  "question": "The actual question string",
-  "reason": "Why this question is critical right now"
+  "question": "The question string",
+  "reason": "Brief reason why this helps"
 }
 `;
 
 const generateRecommendationPrompt = (profile) => `
-You are a senior academic decision engine.
-Analyze the student profile:
+You are a senior academic decision engine. 
+**Goal:** Generate 3 top university/major recommendations based on the profile.
+
+**Profile:**
 ${JSON.stringify(profile, null, 2)}
 
-**Rules:**
-1. Consider GPA, budget, career goals, country preference, and market trends.
-2. Be realistic. If GPA is low, suggest pathways or alternative universities.
-3. Provide reasoning for every major choice.
+**Formatting Rules:**
+- Use **bullet points** only (no paragraphs).
+- **Bold** key insights.
+- Keep answers concise and actionable.
+- **STRICT JSON OUTPUT ONLY**.
 
 **Output JSON Structure:**
 {
-  "summary": "Brief executive summary of the student's potential",
+  "summary": "Brief executive summary (bullet points preferred).",
   "recommendations": [
     {
-      "country": "Country Name",
+      "country": "Country",
       "university": "University Name",
-      "major": "Major Name",
+      "major": "Major",
       "ranking": "Global Ranking (e.g. #45)",
       "tuition_fees": "Approx Tuition (e.g. $20k/year)",
-      "why_this_choice": "Explanation...",
-      "risk_flags": ["Risk 1"],
+      "why_this_choice": "Short bullet points with **bold** highlights.",
+      "risk_flags": ["Risk 1", "Risk 2"],
       "admission_probability": "High/Medium/Low"
     }
   ],
   "top_scholarships": [
       {
           "name": "Scholarship Name",
-          "amount": "Funding Amount (e.g. Full Ride or $1000/month)",
-          "deadline": "Next Deadline (e.g. Dec 2024)",
-          "eligibility": "Brief eligibility criteria"
+          "amount": "Amount",
+          "deadline": "Deadline",
+          "eligibility": "Criteria (brief)"
       }
   ],
-  "risks": ["General risk 1", "General risk 2"],
+  "risks": ["General risk 1"],
   "alternatives": ["Alternative path 1"]
 }
 `;
 
 const generateRoadmapPrompt = (profile, recommendations) => `
-Create a detailed 12-18 month roadmap for this student.
-Profile: ${JSON.stringify(profile)}
-Target Goal: ${JSON.stringify(recommendations[0] || "General Improvement")}
+**Goal:** Create a detailed 12-18 month academic roadmap.
+**Target:** ${JSON.stringify(recommendations[0] || "General Path")}
+
+**Rules:**
+- Divide into structured phases (e.g., Immediate, Short-term, Long-term).
+- **Highlight costs in GREEN** (e.g. "**$150 USD**").
+- Use bullet points for actions.
+- **STRICT JSON OUTPUT ONLY**.
 
 **Output JSON Structure:**
 {
   "roadmap": [
     {
-      "phase": "Month 1-3: Foundation",
-      "description": "High level goal of this phase",
-      "actions": ["Action 1", "Action 2"],
+      "phase": "Phase Name (e.g. Month 1-3: Foundation)",
+      "description": "Short description of this phase.",
+      "actions": ["Action 1 (bold important parts)", "Action 2"],
       "exams": ["IELTS", "SAT"],
-      "skills_to_learn": ["Skill 1"]
+      "skills_to_learn": ["Skill 1", "Skill 2"],
+      "cost_estimate": "Estimated cost (e.g. **$500 USD**)",
+      "timeline": "Month X-Y"
     }
   ]
 }

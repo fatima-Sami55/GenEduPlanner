@@ -10,8 +10,8 @@ const Landing = () => {
         <div className="bg-background relative overflow-hidden">
             {/* Animated Background Mesh */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-500/10 rounded-full blur-[120px] animate-pulse" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-500/10 rounded-full blur-[120px] animate-pulse delay-1000" />
+                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-brand/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent/10 rounded-full blur-[120px] animate-pulse delay-1000" />
             </div>
 
             {/* Hero Section */}
@@ -23,7 +23,7 @@ const Landing = () => {
                         transition={{ duration: 0.5 }}
                         className="mb-8"
                     >
-                        <span className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-medium">
+                        <span className="px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-sm font-medium">
                             🚀 AI-Powered Career Planning
                         </span>
                     </motion.div>
@@ -35,7 +35,7 @@ const Landing = () => {
                     >
                         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
                             Your Future Designed <br className="hidden md:block" />
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand via-accent to-pink-500">
                                 Powered by Intelligence.
                             </span>
                         </h1>
@@ -51,7 +51,7 @@ const Landing = () => {
                         className="flex flex-col sm:flex-row gap-4"
                     >
                         <Link to="/questionnaire">
-                            <Button size="lg" className="h-14 px-10 text-lg rounded-full shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all bg-gradient-to-r from-blue-600 to-purple-600 border-0 hover:scale-105">
+                            <Button size="lg" className="h-14 px-10 text-lg rounded-full shadow-lg shadow-brand/20 hover:shadow-brand/40 transition-all bg-gradient-to-r from-brand to-accent border-0 hover:scale-105">
                                 Start Your Journey <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
                         </Link>
@@ -75,19 +75,19 @@ const Landing = () => {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         <FeatureCard
-                            icon={<Globe className="h-10 w-10 text-blue-500" />}
+                            icon={<Globe className="h-10 w-10 text-brand" />}
                             title="Global Discovery"
                             description="Access a database of top international universities tailored to your academic profile and budget constraints."
                             delay={0.1}
                         />
                         <FeatureCard
-                            icon={<Award className="h-10 w-10 text-amber-500" />}
+                            icon={<Award className="h-10 w-10 text-warning" />}
                             title="Smart Scholarships"
                             description="Don't just apply—qualify. We identify high-value scholarships where you have the highest winning probability."
                             delay={0.2}
                         />
                         <FeatureCard
-                            icon={<BookOpen className="h-10 w-10 text-emerald-500" />}
+                            icon={<BookOpen className="h-10 w-10 text-success" />}
                             title="Actionable Roadmap"
                             description="A month-by-month timeline telling you exactly what exams to take, essays to write, and deadlines to meet."
                             delay={0.3}
@@ -168,9 +168,9 @@ const FeatureCard = ({ icon, title, description, delay }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay }}
-            className="group relative p-8 rounded-3xl bg-background/50 backdrop-blur-sm border border-white/10 hover:border-blue-500/30 transition-all hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1"
+            className="group relative p-8 rounded-3xl bg-background/50 backdrop-blur-sm border border-white/10 hover:border-brand/30 transition-all hover:shadow-2xl hover:shadow-brand/10 hover:-translate-y-1"
         >
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-br from-brand/5 to-accent/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
             <div className="relative z-10">
                 <div className="mb-6 bg-secondary/50 w-16 h-16 rounded-2xl flex items-center justify-center border border-white/10 group-hover:scale-110 transition-transform">
                     {icon}
@@ -189,17 +189,17 @@ const TestimonialCard = ({ quote, author, role, delay }) => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay }}
-            className="min-w-[85vw] md:min-w-[400px] snap-center bg-secondary/10 p-8 rounded-3xl border border-border/50 hover:border-blue-500/20 transition-colors"
+            className="min-w-[85vw] md:min-w-[400px] snap-center bg-secondary/10 p-8 rounded-3xl border border-border/50 hover:border-brand/20 transition-colors"
         >
             <div className="flex flex-col h-full justify-between">
                 <div>
-                    <div className="flex gap-1 mb-4 text-amber-400">
+                    <div className="flex gap-1 mb-4 text-warning">
                         {"★★★★★".split("").map((star, i) => <span key={i}>{star}</span>)}
                     </div>
                     <p className="text-lg italic text-muted-foreground mb-6 leading-relaxed">"{quote}"</p>
                 </div>
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-400 flex items-center justify-center text-white font-bold text-sm">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand to-accent flex items-center justify-center text-white font-bold text-sm">
                         {author.charAt(0)}
                     </div>
                     <div>

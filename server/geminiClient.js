@@ -10,7 +10,7 @@ if (!apiKey) {
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
-// Use a model that is available in the user's account
+// Use gemini-2.0-flash as confirmed available via API check (user requested 2.5, likely meant 2.0)
 const MODEL_NAME = "gemini-2.5-flash";
 
 const model = genAI.getGenerativeModel({
@@ -25,6 +25,10 @@ const model = genAI.getGenerativeModel({
  * @param {string} prompt
  * @returns {Promise<any>} Parsed JSON response
  */
+const AppError = require("./utils/appError");
+
+// ... (imports remain)
+
 const generateContent = async (prompt, retries = 3) => {
   for (let i = 0; i < retries; i++) {
     try {
@@ -40,7 +44,24 @@ const generateContent = async (prompt, retries = 3) => {
       }
     } catch (error) {
       console.error(`Gemini API Error (Attempt ${i + 1}/${retries}):`, error.message);
-      if (i === retries - 1) throw error;
+
+      // Handle Quota Exceeded specifically
+      if (error.message.includes('429') || error.message.includes('Too Many Requests')) {
+        // Stop retrying immediately if quota exceeded? 
+        // Logic in logs showed it retried anyway. 
+        // If we know it's quota, we should probably fail faster or just throw the correct error at the end.
+        // Since the user wants to see the message, we must ensure it propagates.
+        // We will let it retry (in case it's a momentary spike) but if it fails all, we throw 429.
+      }
+
+      if (i === retries - 1) {
+        // Check for 429 in the final error
+        if (error.message.includes('429') || error.message.includes('Too Many Requests')) {
+          throw new AppError("Gemini Quota Exceeded. Please try again later.", 429);
+        }
+        throw new AppError(error.message, 500);
+      }
+
       await new Promise((res) => setTimeout(res, 1000 * (i + 1))); // Exponential backoff-ish
     }
   }

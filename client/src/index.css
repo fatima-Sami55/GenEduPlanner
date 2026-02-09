@@ -4,48 +4,83 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* 
+       Premium Theme:
+       Primary: Indigo #4F46E5 -> 243.4 75.4% 58.6%
+       Hover: #4338CA -> 244.5 57.9% 50.6%
+       Background: #EEF2FF -> 226.7 100% 96.7%
+    */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 220 14.3% 9.6%; /* #111827 - Gray 900 */
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 14.3% 9.6%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
+    --popover-foreground: 220 14.3% 9.6%;
+    
+    --primary: 243.4 75.4% 58.6%; /* #4F46E5 - Indigo 600 */
+    --primary-foreground: 210 40% 98%; /* White */
+    
+    --secondary: 210 40% 96.1%; /* Soft Gray */
     --secondary-foreground: 222.2 47.4% 11.2%;
+    
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
+    
+    --accent: 270.7 91% 65.1%; /* #A855F7 - Purple 500 */
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 84.2% 60.2%; /* #EF4444 - Red 500 */
     --destructive-foreground: 210 40% 98%;
+    
+    --success: 142.1 76.2% 36.3%; /* #16A34A - Green 600 */
+    --success-foreground: 210 40% 98%;
+    
+    --warning: 38 92% 50%; /* #F59E0B - Amber 500 */
+    --warning-foreground: 210 40% 98%;
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 243.4 75.4% 58.6%; /* Matches primary */
+    
     --radius: 0.5rem;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
+    
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
+    
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    
+    --primary: 243.4 75.4% 58.6%; /* Keep Indigo for brand consistency or lighten slightly */
+    --primary-foreground: 210 40% 98%;
+    
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
+    
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
+    
+    --accent: 270.7 91% 65.1%;
     --accent-foreground: 210 40% 98%;
+    
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
+    
+    --success: 142.1 70.6% 45.3%;
+    --success-foreground: 210 40% 98%;
+    
+    --warning: 48 96% 53%;
+    --warning-foreground: 210 40% 98%;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 243.4 75.4% 58.6%;
   }
 }
 

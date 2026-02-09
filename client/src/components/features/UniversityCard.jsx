@@ -14,11 +14,11 @@ const SimpleBadge = ({ children, className }) => (
 export const UniversityCard = ({ university }) => {
     return (
         <Card className="hover:shadow-lg transition-all duration-300 border-none shadow-md bg-gradient-to-br from-card to-secondary/30 overflow-hidden group">
-            <div className="h-2 w-full bg-gradient-to-r from-blue-500 to-purple-500" />
+            <div className="h-2 w-full bg-gradient-to-r from-brand to-accent" />
             <CardHeader className="pb-2 relative">
                 <div className="flex justify-between items-start gap-4">
                     <div>
-                        <CardTitle className="text-xl font-bold leading-tight group-hover:text-blue-600 transition-colors">
+                        <CardTitle className="text-xl font-bold leading-tight group-hover:text-brand transition-colors">
                             {university.name}
                         </CardTitle>
                         <p className="text-sm text-muted-foreground flex items-center mt-1">

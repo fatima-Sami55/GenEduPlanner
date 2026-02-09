@@ -4,6 +4,8 @@ import { Loader } from '../components/ui/loader';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getRecommendations, getRoadmap } from '../services/api';
 
+import { ServiceBusy } from '../components/features/ServiceBusy';
+
 const stages = [
     "Analyzing your academic profile...",
     "Scanning 1,500+ global universities...",
@@ -14,6 +16,7 @@ const stages = [
 
 const Loading = () => {
     const [currentStage, setCurrentStage] = useState(0);
+    const [isQuotaExceeded, setIsQuotaExceeded] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
     const profileId = location.state?.profileId;
@@ -50,6 +53,11 @@ const Loading = () => {
                 // 4. Ensure min delay is met
                 await minDelayPromise;
 
+                // PERSIST STATE so ProtectedRoute passes and reloads work
+                localStorage.setItem('reportGenerated', 'true');
+                localStorage.setItem('recommendationsData', JSON.stringify(recData));
+                localStorage.setItem('roadmapData', JSON.stringify(roadmapData));
+
                 // Navigate with data
                 navigate('/results', {
                     state: {
@@ -62,12 +70,18 @@ const Loading = () => {
             } catch (error) {
                 console.error("Error fetching AI results:", error);
 
+                if (error.response && error.response.status === 429) {
+                    setIsQuotaExceeded(true);
+                    return;
+                }
+
                 // FALLBACK FOR DEMO if API fails (e.g. backend not running)
                 // Wait for min delay anyway
                 await minDelayPromise;
                 navigate('/results', {
                     state: {
                         error: true,
+                        errorMessage: error.message || "Unknown error occurred",
                         profileId: profileId
                     }
                 });
@@ -80,6 +94,10 @@ const Loading = () => {
 
         return () => clearInterval(stageInterval);
     }, [navigate, profileId]);
+
+    if (isQuotaExceeded) {
+        return <ServiceBusy onRetry={() => window.location.reload()} />;
+    }
 
     return (
         <Container className="flex flex-col items-center justify-center min-h-[70vh]">

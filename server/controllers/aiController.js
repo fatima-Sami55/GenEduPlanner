@@ -14,21 +14,50 @@ const getProfileOrError = (id) => {
 };
 
 exports.getNextQuestion = catchAsync(async (req, res, next) => {
-    const { studentId } = req.body;
+    const { studentId, answer } = req.body; // Expect answer to previous question if any
     if (!studentId) return next(new AppError('studentId is required', 400));
 
     const profile = getProfileOrError(studentId);
 
-    // We might want to append previous answers if we had them stored, 
-    // currently we just analyze the static profile to ask clarification.
-    // In a real app, 'profile' would include 'answers' array.
+    // Update with previous answer if provided (mock logic as we don't have full history storage in profileSchema yet, 
+    // but in memory 'profiles' object is flexible)
+    if (answer) {
+        if (!profile.answers) profile.answers = [];
+        profile.answers.push(answer);
+        storageService.saveProfile(studentId, { answers: profile.answers });
+    }
+
+    // Check if we reached the limit
+    if (profile.question_count >= 4) {
+        // Mark as completed just in case
+        storageService.saveProfile(studentId, { questions_completed: true });
+
+        return res.status(200).json({
+            status: 'success',
+            data: {
+                completed: true,
+                message: "Questionnaire completed. Proceed to recommendations."
+            }
+        });
+    }
+
+    // Increment count for the *next* question we are about to ask
+    // (Or we can increment after answer? Logic: Requesting next question implies we are moving forward)
+    // Let's increment AFTER generating to be safe, or simply count how many called.
+    // Better: Helper increments.
+
+    // Actually, prompts.generateStudentAnalysisPrompt uses the profile. 
+    // If we want to ask a NEW question, we generate it.
 
     const prompt = prompts.generateStudentAnalysisPrompt(profile);
     const aiResponse = await geminiClient.generateContent(prompt);
 
+    // Update count
+    storageService.saveProfile(studentId, { question_count: (profile.question_count || 0) + 1 });
+
     res.status(200).json({
         status: 'success',
-        data: aiResponse
+        data: aiResponse // { question: "...", reason: "..." }
     });
 });
 
@@ -37,11 +66,23 @@ exports.getRecommendations = catchAsync(async (req, res, next) => {
     if (!studentId) return next(new AppError('studentId is required', 400));
 
     const profile = getProfileOrError(studentId);
+
+    // Flow control: Ensure questions are completion or count is sufficient
+    // (Optional: enforce explicit check, but we set it here to be sure)
+
     const prompt = prompts.generateRecommendationPrompt(profile);
     const aiResponse = await geminiClient.generateContent(prompt);
 
-    // Ideally store recommendations to session/db here for roadmap generation later
-    storageService.saveProfile(studentId, { lastRecommendations: aiResponse.recommendations });
+    // Check for valid response structure (basic check)
+    if (!aiResponse.recommendations) {
+        throw new AppError("AI failed to generate recommendations. Please try again.", 500);
+    }
+
+    // Save state
+    storageService.saveProfile(studentId, {
+        lastRecommendations: aiResponse.recommendations,
+        questions_completed: true
+    });
 
     res.status(200).json({
         status: 'success',
@@ -64,6 +105,9 @@ exports.getRoadmap = catchAsync(async (req, res, next) => {
 
     const prompt = prompts.generateRoadmapPrompt(profile, recommendations);
     const aiResponse = await geminiClient.generateContent(prompt);
+
+    // Save report generated flag
+    storageService.saveProfile(studentId, { report_generated: true });
 
     res.status(200).json({
         status: 'success',

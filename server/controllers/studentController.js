@@ -19,7 +19,12 @@ const profileSchema = Joi.object({
     academic_strengths: Joi.array().items(Joi.string()),
     academic_weaknesses: Joi.array().items(Joi.string()),
     dynamic_answers: Joi.array().items(Joi.any()).optional(),
-    additional_info: Joi.string().optional().allow('')
+    additional_info: Joi.string().optional().allow(''),
+
+    // Flow control flags (initialized by server usually, but allowing client to send if needed for recovery, though typically server overrides)
+    questions_completed: Joi.boolean().default(false),
+    report_generated: Joi.boolean().default(false),
+    question_count: Joi.number().default(0)
 });
 
 exports.createProfile = catchAsync(async (req, res, next) => {
@@ -29,7 +34,14 @@ exports.createProfile = catchAsync(async (req, res, next) => {
         return next(new AppError(`Validation Error: ${error.details.map(x => x.message).join(', ')}`, 400));
     }
 
-    const profile = storageService.saveProfile(value.id, value);
+    const profileData = {
+        ...value,
+        questions_completed: false,
+        report_generated: false,
+        question_count: 0
+    };
+
+    const profile = storageService.saveProfile(value.id, profileData);
 
     res.status(201).json({
         status: 'success',
