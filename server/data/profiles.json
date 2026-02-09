@@ -78,5 +78,573 @@
     "question_count": 1,
     "lastUpdated": "2026-02-09T12:21:56.265Z",
     "additional_info": "\nQ: Within robotics, are you more passionate about the software/AI aspects, or the hardware/mechanical design and implementation?\nA: both"
+  },
+  "student_szs9tgtrr": {
+    "id": "student_szs9tgtrr",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "Computer Science",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, Gemrany",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": true,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T13:41:16.542Z",
+    "additional_info": "\nQ: Within software development, are you most drawn to specific areas like AI/ML, web, mobile, or cybersecurity, or do you have a preference for backend versus frontend development?\nA: I'm more drawn to frontend development\nQ: To become a Senior Software Engineer focusing on frontend, what advanced skills or specific project types do you want to develop and lead?\nA: Projects that integrate AI and are more likely web applications\nQ: Considering your goal, what specific user experiences or interactive challenges involving AI in web applications genuinely excite you?\nA: smart responses\nQ: Could you elaborate on the specific types of 'smart responses' you envision, such as adaptive UI, intelligent chatbots, or predictive content?\nA: all of the three things you mentioned",
+    "lastRecommendations": [
+      {
+        "country": "Germany",
+        "university": "Technical University of Berlin (TU Berlin)",
+        "major": "Informatics (B.Sc.)",
+        "ranking": "#154 (QS World University Rankings 2024)",
+        "tuition_fees": "Approx. €300-350/semester (administrative fees only)",
+        "why_this_choice": [
+          "Offers a **tuition-free** public university education in a major tech hub.",
+          "Comprehensive **Informatics curriculum** provides strong foundations in software engineering, web technologies, and AI.",
+          "Potential for specialization through electives or research in **Human-Computer Interaction** and intelligent systems, aligning with AI/frontend interests.",
+          "Location in **Berlin offers industry connections** and internship opportunities relevant to web and AI development."
+        ],
+        "risk_flags": [
+          "Highly competitive admission process for international students.",
+          "German language proficiency, while not strictly required for all programs, is beneficial for daily life and integration.",
+          "Mandatory proof of funds (blocked account) for student visa application (~€11,208/year)."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Germany",
+        "university": "University of Bonn",
+        "major": "Computer Science (B.Sc.)",
+        "ranking": "#292 (QS World University Rankings 2024)",
+        "tuition_fees": "Approx. €300-400/semester (administrative fees only)",
+        "why_this_choice": [
+          "Another **tuition-free** public university with a strong academic reputation.",
+          "Excellent Computer Science department with active research in **Artificial Intelligence, Machine Learning**, and **Human-Computer Interaction (HCI)**.",
+          "Provides opportunities for practical projects in **web application development** and intelligent systems.",
+          "A solid foundation for aspiring **Senior Software Engineers** focusing on AI-driven frontend solutions."
+        ],
+        "risk_flags": [
+          "Admission can be highly competitive for Bachelor's programs.",
+          "Navigating daily life and bureaucracy in Germany will largely require German language skills.",
+          "Requirement for a blocked bank account to cover living expenses for visa purposes."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Pakistan",
+        "university": "National University of Computer and Emerging Sciences (FAST-NUCES)",
+        "major": "Bachelor of Science in Computer Science",
+        "ranking": "Highly regarded nationally for CS",
+        "tuition_fees": "Approx. $3,000 - $5,000/year",
+        "why_this_choice": [
+          "**Excellent national reputation** for Computer Science and software engineering programs.",
+          "Curriculum comprehensively covers **web development, artificial intelligence, and software project management**, directly supporting career goals.",
+          "**Affordable tuition fees** are well within the specified budget range (<$10k).",
+          "Strong alumni network within the software industry in Pakistan, offering good local career prospects."
+        ],
+        "risk_flags": [
+          "Global recognition of the degree might be lower compared to top German universities.",
+          "Potential for fewer cutting-edge AI research opportunities or resources compared to top global institutions.",
+          "While strong, the curriculum might be less specialized in very niche AI-frontend integration topics compared to a dedicated research track."
+        ],
+        "admission_probability": "High"
+      }
+    ]
+  },
+  "student_86owx2hax": {
+    "id": "student_86owx2hax",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "Computer Science",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, Germany",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": true,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T13:44:42.379Z",
+    "additional_info": "\nQ: What specific areas within software development (e.g., AI, web, mobile, data science) are you most passionate about pursuing as a Senior Software Engineer?\nA: web\nQ: Within web development, are you more drawn to front-end (user interface), back-end (server logic), or full-stack development, and why?\nA: front-end\nQ: Which specific front-end technologies or frameworks (e.g., React, Angular, Vue) are you most interested in mastering?\nA: React\nQ: To achieve your goal of becoming a Senior React Front-end Engineer, what kind of learning environment or program structure (e.g., project-based, research-heavy, industry-focused) do you find most appealing?\nA: project-based",
+    "lastRecommendations": [
+      {
+        "country": "Pakistan",
+        "university": "National University of Sciences & Technology (NUST), Islamabad",
+        "major": "Bachelor of Science in Software Engineering (BS-SE)",
+        "ranking": "Top 2 in Pakistan; #300-500 globally (QS)",
+        "tuition_fees": "$3,000 - $4,000/year (approx. for international students)",
+        "why_this_choice": [
+          "**Leading university in Pakistan** for Engineering and IT.",
+          "Program includes **modern software development practices** and projects, aligning with project-based learning.",
+          "Curriculum offers pathways to **Front-End Development** skills.",
+          "**Highly affordable tuition and living costs**, well within the specified budget.",
+          "Strong **industry connections** for internships and career progression."
+        ],
+        "risk_flags": [
+          "Limited global recognition compared to top Western institutions.",
+          "Potentially less diverse international student body."
+        ],
+        "admission_probability": "High"
+      },
+      {
+        "country": "Germany",
+        "university": "Technische Universität Berlin (TU Berlin)",
+        "major": "Computer Science (B.Sc.)",
+        "ranking": "Top 10 in Germany; #150-200 globally (QS)",
+        "tuition_fees": "$800 - $1,000/year (admin fees only, no tuition)",
+        "why_this_choice": [
+          "**World-class Computer Science program** with excellent academic reputation.",
+          "Located in **Berlin's vibrant tech ecosystem**, ideal for networking in software development.",
+          "Strong curriculum covering **core CS with software engineering tracks** and project opportunities.",
+          "**Very low tuition fees** for public universities in Germany."
+        ],
+        "risk_flags": [
+          "**Living costs (~$12,000-15,000/year) significantly exceed budget**.",
+          "**Most Bachelor's programs are primarily German-taught**, requiring C1 German proficiency.",
+          "**Highly competitive admissions** due to international demand.",
+          "Finding an explicitly 'React Front-end' specialization at Bachelor's level is rare; focus will be on core CS."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Germany",
+        "university": "Hamburg University of Technology (TUHH)",
+        "major": "Computer Science (B.Sc.)",
+        "ranking": "Reputable within Germany; #500-600 globally (QS)",
+        "tuition_fees": "$800 - $1,000/year (admin fees only, no tuition)",
+        "why_this_choice": [
+          "**Strong focus on engineering and practical applications** within Computer Science.",
+          "Opportunity for **project work and internships** in Hamburg's growing tech scene.",
+          "Curriculum provides a solid foundation in **software development and relevant elective modules**.",
+          "**Low tuition fees** for public universities, making education itself affordable."
+        ],
+        "risk_flags": [
+          "**Living costs (~$12,000-15,000/year) significantly exceed budget**.",
+          "**Bachelor's programs are predominantly German-taught**, necessitating C1 German proficiency.",
+          "**Competitive admission criteria**.",
+          "Specialized 'Front-end React' content will likely be part of electives or personal projects, not core curriculum."
+        ],
+        "admission_probability": "Medium"
+      }
+    ]
+  },
+  "student_bvzk8glji": {
+    "id": "student_bvzk8glji",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "CS",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, Germany",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": false,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T13:58:34.646Z",
+    "additional_info": "\nQ: What specific areas within software development (e.g., AI/ML, web, mobile, cybersecurity) are you most passionate about exploring?\nA: web\nQ: Within web development, are you more passionate about crafting user interfaces (frontend), building robust server-side systems (backend), or managing databases and infrastructure (DevOps)?\nA: frontend\nQ: What specific frontend frameworks or technologies (e.g., React, Angular, Vue) are you most eager to master?\nA: React\nQ: Beyond mastering React, what other skills or knowledge areas do you believe are crucial for a Senior Frontend Engineer?\nA: AI",
+    "lastRecommendations": [
+      {
+        "country": "Germany",
+        "university": "Technical University of Berlin (TU Berlin)",
+        "major": "Computer Science (B.Sc.)",
+        "ranking": "Top 150-200 globally (for CS)",
+        "tuition_fees": "Approx. €300-€400/semester (semester contribution)",
+        "why_this_choice": [
+          "**Strong academic reputation** in Computer Science.",
+          "Located in **Berlin, a major European tech hub**, offering internship opportunities.",
+          "**Extremely affordable tuition** aligns with the budget.",
+          "Offers diverse modules covering **web development and AI/Machine Learning**."
+        ],
+        "risk_flags": [
+          "Most B.Sc. programs are **primarily taught in German** (B2/C1 proficiency typically required).",
+          "**High competition** for admission in CS programs."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Germany",
+        "university": "RWTH Aachen University",
+        "major": "Computer Science (B.Sc.)",
+        "ranking": "Top 150-200 globally (for Engineering/Tech)",
+        "tuition_fees": "Approx. €300-€400/semester (semester contribution)",
+        "why_this_choice": [
+          "One of **Germany's leading technical universities**, highly regarded for engineering and CS.",
+          "Known for its **research focus** and strong **industry connections**.",
+          "**Affordable tuition** supports budget constraints.",
+          "Comprehensive CS curriculum, allowing for specialization in areas like **web technologies or AI**."
+        ],
+        "risk_flags": [
+          "**Primarily German-taught B.Sc. programs** (German language proficiency is crucial).",
+          "Academically rigorous environment requiring strong self-discipline."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Pakistan",
+        "university": "National University of Sciences & Technology (NUST), Islamabad",
+        "major": "Software Engineering (B.SE) or Computer Science (B.CS)",
+        "ranking": "Top University in Pakistan",
+        "tuition_fees": "Approx. $3,000-$5,000/year (for international/local non-subsidized)",
+        "why_this_choice": [
+          "**Top-ranked university in Pakistan** for engineering and IT.",
+          "Offers specialized **Software Engineering degree**, directly aligning with career goals.",
+          "**Significantly lower tuition** than most international options, well within budget.",
+          "Strong local industry connections, facilitating local career progression."
+        ],
+        "risk_flags": [
+          "**Less international exposure** compared to European universities.",
+          "Focus primarily on the local job market."
+        ],
+        "admission_probability": "High"
+      }
+    ]
+  },
+  "student_wpairnv0b": {
+    "id": "student_wpairnv0b",
+    "name": "Zaid",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "CS",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, Germany",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": false,
+    "report_generated": false,
+    "question_count": 0,
+    "lastUpdated": "2026-02-09T14:12:11.556Z"
+  },
+  "student_rrtmubkj3": {
+    "id": "student_rrtmubkj3",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "CS",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, Germany",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": true,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T14:28:31.494Z",
+    "additional_info": "\nQ: Within software development, are you more drawn to front-end, back-end, mobile, data, or another specific area?\nA: front-end\nQ: What kind of complex front-end problems do you envision solving as a Senior Software Engineer?\nA: 3d animated appealing UIs\nQ: For your goal of creating 3D animated UIs, are you primarily considering formal academic programs, specialized bootcamps, or self-directed learning?\nA: self-directed learning\nQ: Given your passion for 3D animated UIs and self-directed learning, how do you envision this specialization integrating with your CS major and leading to a Senior Software Engineer role?\nA: I'll get more domain knowledge and won't only be bound to front-end development",
+    "lastRecommendations": [
+      {
+        "country": "Germany",
+        "university": "University of Bonn",
+        "major": "Bachelor of Science in Computer Science",
+        "ranking": "Globally ~#200-300 (QS/THE)",
+        "tuition_fees": "~€600-800/year (semester contributions only)",
+        "why_this_choice": [
+          "**Public university with effectively no tuition fees** for international students.",
+          "One of the few **English-taught Bachelor's CS programs** in Germany.",
+          "Provides a **strong theoretical foundation in CS**, crucial for a Senior Software Engineer role.",
+          "Potential to explore **computer graphics and human-computer interaction (HCI)** through electives or projects, aligning with 3D UI interests."
+        ],
+        "risk_flags": [
+          "**Living costs in Germany (~€10,800-€12,000/year) will exceed the $10k budget significantly.**",
+          "Admission can be **highly competitive**; 3.46 GPA might be borderline.",
+          "More theoretical focus, requiring continued **self-directed learning for practical 3D UI skills**."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Pakistan",
+        "university": "National University of Sciences & Technology (NUST)",
+        "major": "Bachelor of Science in Computer Science",
+        "ranking": "Top-ranked in Pakistan (QS Asia Top 100)",
+        "tuition_fees": "~$2,500-$5,000/year",
+        "why_this_choice": [
+          "**Leading CS program in Pakistan** with a strong reputation for engineering and technology.",
+          "**Highly affordable tuition fees**, well within the stated budget range.",
+          "Curriculum covers **core CS with opportunities for specialization** in areas like graphics, software engineering, and web technologies.",
+          "Provides a **familiar cultural and academic environment**, potentially easing transition."
+        ],
+        "risk_flags": [
+          "**Global exposure and research opportunities** might be less compared to top European institutions.",
+          "Focus might be more on **local industry needs** unless specific international tracks are pursued.",
+          "Competitive admissions for top programs in Pakistan."
+        ],
+        "admission_probability": "High"
+      },
+      {
+        "country": "Germany",
+        "university": "Hochschule Furtwangen University (HFSU)",
+        "major": "Bachelor of Science in Computer Science (or similar)",
+        "ranking": "Strong reputation for applied sciences within Germany",
+        "tuition_fees": "~€3,000/year (for non-EU citizens in Baden-Württemberg)",
+        "why_this_choice": [
+          "**Application-oriented curriculum**, well-suited for hands-on software development and front-end interests.",
+          "Often offers specializations or modules in **media informatics, web technologies, and UI/UX design**, directly relevant to 3D UIs.",
+          "Emphasis on **practical projects and industry relevance**, enhancing employability.",
+          "**Affordable tuition** for non-EU students (compared to other countries), within the budget for tuition."
+        ],
+        "risk_flags": [
+          "**Living costs in Germany (~€10,800-€12,000/year) will exceed the $10k budget significantly.**",
+          "As a University of Applied Sciences, it has a **less theoretical and research-heavy focus** than traditional universities.",
+          "**International recognition** may be less than globally ranked research universities."
+        ],
+        "admission_probability": "Medium to High"
+      }
+    ]
+  },
+  "student_3w9np6ff9": {
+    "id": "student_3w9np6ff9",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "3.46",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, England",
+    "interests": [
+      "Software development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": true,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T14:38:06.408Z",
+    "additional_info": "\nQ: To best align your studies with your goal of becoming a Senior Software Engineer, what specific major or academic program are you planning to pursue?\nA: Computer Science\nQ: Which programming languages, frameworks, or specializations within software development are you most eager to master for your career goal?\nA: React and Next Js\nQ: To become a Senior Software Engineer, what aspects of system design or software architecture are you most keen to master?\nA: high level architecture\nQ: Beyond technical expertise, what leadership or project management skills do you see as key to becoming a Senior Software Engineer?\nA: Teamwork, Time management",
+    "lastRecommendations": [
+      {
+        "country": "England",
+        "university": "University of Greenwich",
+        "major": "BSc Hons Computer Science",
+        "ranking": "Global: #671-680 (QS 2024)",
+        "tuition_fees": "Approx $19k-$22k/year (Requires significant scholarship)",
+        "why_this_choice": [
+          "**Practical, industry-focused curriculum** aligns well with software development career goals.",
+          "Offers modules relevant to **modern web technologies** and **system design principles**.",
+          "Located in London, providing **networking opportunities** in the tech industry."
+        ],
+        "risk_flags": [
+          "High tuition cost relative to budget",
+          "Highly competitive for full scholarships"
+        ],
+        "admission_probability": "Medium (contingent on exceptional scholarship application)"
+      },
+      {
+        "country": "England",
+        "university": "University of Hertfordshire",
+        "major": "BSc Hons Computer Science",
+        "ranking": "Global: #951-1000 (QS 2024)",
+        "tuition_fees": "Approx $19.5k-$20.5k/year (Requires significant scholarship)",
+        "why_this_choice": [
+          "Known for its **strong links with industry** and **employability focus**, beneficial for career progression.",
+          "Curriculum extensively covers **software engineering, web development, and system architecture**.",
+          "**Good for practical skill development** essential for a Senior Software Engineer role."
+        ],
+        "risk_flags": [
+          "High tuition cost relative to budget",
+          "Requires substantial scholarship to be viable"
+        ],
+        "admission_probability": "Medium (contingent on strong application and scholarship success)"
+      },
+      {
+        "country": "Pakistan",
+        "university": "FAST-NUCES (National University of Computer and Emerging Sciences)",
+        "major": "BS Computer Science",
+        "ranking": "Global: #401-450 (QS Subject Ranking: Computer Science 2023)",
+        "tuition_fees": "Approx $1,000-$1,700/year (Well within budget)",
+        "why_this_choice": [
+          "**Consistently top-ranked** for Computer Science in Pakistan, offering high-quality education.",
+          "**Strong curriculum** in software engineering, data structures, and algorithms, foundational for **system architecture**.",
+          "Known for its **practical approach** and strong alumni network in the IT industry, beneficial for career entry and growth."
+        ],
+        "risk_flags": [
+          "Less international exposure compared to UK universities"
+        ],
+        "admission_probability": "High (if academic requirements are met)"
+      }
+    ]
+  },
+  "student_9j69ihl85": {
+    "id": "student_9j69ihl85",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "CS",
+    "gpa": 3.46,
+    "country_preference": "Pakistan, England",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": true,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T14:50:30.123Z",
+    "additional_info": "\nQ: What types of software development projects or challenges do you find most engaging and why?\nA: front end development projects\nQ: What kind of user experiences or applications do you dream of building as a Senior Software Engineer?\nA: Appealing user experiences and problem solving applications\nQ: As a Senior Software Engineer, what specific complex front-end problems or system architectures would you most enjoy designing or optimizing?\nA: projects with multiple animations\nQ: When building appealing user experiences with animations, are you more drawn to the visual design and user interaction, or the technical optimization and performance challenges?\nA: user interaction and technical optimization",
+    "lastRecommendations": [
+      {
+        "country": "Pakistan",
+        "university": "National University of Computer and Emerging Sciences (FAST-NUCES)",
+        "major": "BS Computer Science",
+        "ranking": "Top CS institution in Pakistan",
+        "tuition_fees": "Approx $3,000 - $6,000/year",
+        "why_this_choice": [
+          "**Highly reputable** for Computer Science and software engineering graduates.",
+          "Curriculum focuses on **modern software development methodologies**, ideal for front-end.",
+          "Excellent **industry links and placement records** for software roles.",
+          "**Tuition is well within the budget range**."
+        ],
+        "risk_flags": [
+          "Limited global recognition compared to top-tier international universities."
+        ],
+        "admission_probability": "High"
+      },
+      {
+        "country": "Pakistan",
+        "university": "National University of Sciences & Technology (NUST)",
+        "major": "BS Computer Science",
+        "ranking": "Global #300-400, Top 3-5 in Pakistan for Engineering/Tech",
+        "tuition_fees": "Approx $4,000 - $8,000/year",
+        "why_this_choice": [
+          "A **globally recognized and highly prestigious** university in Pakistan.",
+          "Offers a **comprehensive CS curriculum** with research opportunities relevant to UX/Front-End.",
+          "Strong emphasis on **innovation and producing industry-ready graduates**.",
+          "**Tuition is within the budget range**."
+        ],
+        "risk_flags": [
+          "Highly competitive admission for international students."
+        ],
+        "admission_probability": "Medium-High"
+      },
+      {
+        "country": "England",
+        "university": "University of Kent",
+        "major": "BSc Computer Science (with Software Engineering or Web Development pathways)",
+        "ranking": "Global #350-400, Top 30 in UK for CS",
+        "tuition_fees": "Approx $20,000 - $25,000/year",
+        "why_this_choice": [
+          "Strong Computer Science program with **practical application and project work**.",
+          "Offers specific modules/pathways in **Software Engineering and Web Development**, aligning with interests in front-end and UX.",
+          "Reputable **UK university experience** and access to the European tech market.",
+          "**High quality teaching and research environment**."
+        ],
+        "risk_flags": [
+          "**Major budget shortfall**: Tuition is significantly above the $10k budget.",
+          "Admission highly dependent on securing **substantial, highly competitive scholarships**.",
+          "GPA (3.46) might be borderline competitive for some UK programs without strong supplementary materials."
+        ],
+        "admission_probability": "Low-Medium (highly dependent on scholarship success)"
+      }
+    ]
+  },
+  "student_ed2coofpi": {
+    "id": "student_ed2coofpi",
+    "name": "Zaid Haris",
+    "age": 20,
+    "currentEducation": "Undergraduate",
+    "english_proficiency": "Advanced",
+    "intended_major": "CS",
+    "gpa": 3.46,
+    "country_preference": "Pakistan",
+    "interests": [
+      "Software Development"
+    ],
+    "budget_range": "Less than $10k",
+    "career_goal": "Senior Software Engineer",
+    "risk_tolerance": "Medium",
+    "questions_completed": true,
+    "report_generated": true,
+    "question_count": 4,
+    "lastUpdated": "2026-02-09T15:03:26.967Z",
+    "additional_info": "\nQ: Given your interest in Software Development and goal to be a Senior Software Engineer, what specific *type* of software (e.g., web, mobile, AI, data, embedded) are you most passionate about building?\nA: web\nQ: Within web development, are you more drawn to crafting user interfaces (frontend), building server logic and databases (backend), or working across both (fullstack)?\nA: frontend\nQ: What specific frontend technologies or frameworks (e.g., React, Angular, Vue) are you most eager to master for your career goal?\nA: React\nQ: What advanced aspects of React or its ecosystem (e.g., state management, performance, Next.js) do you want to master to become a Senior Engineer?\nA: Next Js",
+    "lastRecommendations": [
+      {
+        "country": "Pakistan",
+        "university": "National University of Computer and Emerging Sciences (FAST-NUCES)",
+        "major": "BS Software Engineering / BS Computer Science",
+        "ranking": "Top 5 (for CS/SE in Pakistan)",
+        "tuition_fees": "Approx. $2,000 - $4,000/year",
+        "why_this_choice": [
+          "**Highly regarded** for Computer Science and Software Engineering programs in Pakistan.",
+          "Strong emphasis on **practical skills** and industry-relevant curriculum, directly aligning with career goal.",
+          "Excellent **alumni network** in the tech industry, particularly for software development roles.",
+          "Tuition fees are **well within the budget** for in-country study.",
+          "Specific program pathways or elective options often cater to **web development and latest technologies**."
+        ],
+        "risk_flags": [
+          "**High competition** for admission due to strong reputation and high demand.",
+          "Curriculum might be **broad CS/SE**; proactive effort needed to specialize in React/Next.js within projects/electives."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Pakistan",
+        "university": "National University of Sciences & Technology (NUST)",
+        "major": "BS Computer Science / BS Software Engineering",
+        "ranking": "Top 3 (overall in Pakistan, strong for Engineering/CS)",
+        "tuition_fees": "Approx. $2,500 - $5,000/year",
+        "why_this_choice": [
+          "One of the **most prestigious** universities in Pakistan, offering a robust engineering foundation.",
+          "Strong academic rigor and **research opportunities** in computer science.",
+          "Graduates are **highly sought after** by employers, supporting the career goal of a Senior Software Engineer.",
+          "Provides a **holistic educational environment** with diverse student activities and innovation focus.",
+          "Tuition fees are **within budget** for in-country study."
+        ],
+        "risk_flags": [
+          "**Very high competition** for admission; a 3.46 GPA is competitive but may require strong admission test scores.",
+          "Curriculum may be more **theoretically inclined** than FAST-NUCES, requiring more self-driven practical application."
+        ],
+        "admission_probability": "Medium"
+      },
+      {
+        "country": "Pakistan",
+        "university": "Lahore University of Management Sciences (LUMS)",
+        "major": "BSc Computer Science",
+        "ranking": "Top 2 (overall in Pakistan)",
+        "tuition_fees": "Approx. $8,000 - $10,000/year",
+        "why_this_choice": [
+          "**Elite private university** with an excellent reputation for interdisciplinary studies and strong faculty.",
+          "Offers a **modern Computer Science curriculum** with opportunities for specialization and research.",
+          "Strong focus on **critical thinking and problem-solving**, highly valuable for a Senior Software Engineer role.",
+          "Tuition is at the **higher end of the budget**, but generally manageable within the specified range.",
+          "Good connections to **industry and entrepreneurial ecosystem**."
+        ],
+        "risk_flags": [
+          "**Highly selective admissions process**, GPA of 3.46 needs to be bolstered by strong extracurriculars and excellent admission test scores.",
+          "Closest to the **upper limit of the budget**, necessitating careful financial planning or scholarship application."
+        ],
+        "admission_probability": "Medium-Low"
+      }
+    ]
   }
 }

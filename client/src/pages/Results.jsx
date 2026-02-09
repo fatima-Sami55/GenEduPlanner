@@ -128,6 +128,30 @@ const Results = () => {
 
     if (loading) return null;
 
+    if (location.state?.error) {
+        return (
+            <div className="min-h-screen bg-background flex items-center justify-center p-4">
+                <Container className="max-w-md text-center">
+                    <div className="bg-destructive/10 p-6 rounded-full inline-block mb-6">
+                        <AlertTriangle className="h-12 w-12 text-destructive" />
+                    </div>
+                    <h2 className="text-2xl font-bold mb-4">Generation Failed</h2>
+                    <p className="text-muted-foreground mb-8">
+                        {location.state.errorMessage || "We couldn't generate your roadmap at this time. Please try again."}
+                    </p>
+                    <div className="flex flex-col gap-3">
+                        <Button onClick={() => navigate('/questionnaire')} className="w-full">
+                            Retake Assessment
+                        </Button>
+                        <Button variant="outline" onClick={() => navigate('/')} className="w-full">
+                            Back to Home
+                        </Button>
+                    </div>
+                </Container>
+            </div>
+        );
+    }
+
     return (
         <div className="min-h-screen bg-background relative overflow-hidden pt-20 pb-20">
             {/* Background Effects */}

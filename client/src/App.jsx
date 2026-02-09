@@ -9,10 +9,16 @@ import { NoPlanState } from './components/features/NoPlanState';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
+  const location = useLocation();
   const hasProfile = localStorage.getItem('currentStudentId');
   const isGenerated = localStorage.getItem('reportGenerated') === 'true';
+  const hasData = localStorage.getItem('roadmapData');
+  const hasError = location.state?.error;
 
-  if (!hasProfile || !isGenerated) {
+  // Allow access if:
+  // 1. Profile exists AND (Report is generated OR Data exists in storage)
+  // 2. Profile exists AND An error occurred during generation (so we can show the error)
+  if (!hasProfile || (!isGenerated && !hasData && !hasError)) {
     return <NoPlanState />;
   }
 

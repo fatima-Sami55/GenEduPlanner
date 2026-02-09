@@ -149,6 +149,7 @@ const Questionnaire = () => {
             try {
                 // Initial Save to Backend
                 const studentId = 'student_' + Math.random().toString(36).substr(2, 9);
+                localStorage.setItem('currentStudentId', studentId);
 
                 // Format interests as array
                 const interestsArray = newFormData.interests

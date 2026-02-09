@@ -45,10 +45,12 @@ const Loading = () => {
                 const minDelayPromise = new Promise(resolve => setTimeout(resolve, 3000));
 
                 // 2. Fetch Recommendations first
-                const recData = await getRecommendations(profileId);
+                const recRes = await getRecommendations(profileId);
+                const recData = recRes.data; // Extract inner data
 
                 // 3. Fetch Roadmap (now that recommendations are likely saved in backend session/db logic)
-                const roadmapData = await getRoadmap(profileId);
+                const roadmapRes = await getRoadmap(profileId);
+                const roadmapData = roadmapRes.data; // Extract inner data
 
                 // 4. Ensure min delay is met
                 await minDelayPromise;
@@ -61,7 +63,7 @@ const Loading = () => {
                 // Navigate with data
                 navigate('/results', {
                     state: {
-                        results: recData,
+                        recommendations: recData, // FIXED KEY: was 'results', needs to be 'recommendations'
                         roadmap: roadmapData,
                         profileId: profileId
                     }
